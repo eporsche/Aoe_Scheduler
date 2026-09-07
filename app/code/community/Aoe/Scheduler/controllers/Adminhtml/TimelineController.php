@@ -24,7 +24,7 @@ class Aoe_Scheduler_Adminhtml_TimelineController extends Aoe_Scheduler_Controlle
      *
      * @return bool
      */
-    protected function _isAllowed()
+    protected function _isAllowed(): bool
     {
         return Mage::getSingleton('admin/session')->isAllowed('system/aoe_scheduler/aoe_scheduler_timeline');
     }

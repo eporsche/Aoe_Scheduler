@@ -104,7 +104,7 @@ class Aoe_Scheduler_Adminhtml_SchedulerController extends Aoe_Scheduler_Controll
      *
      * @return bool
      */
-    protected function _isAllowed()
+    protected function _isAllowed(): bool
     {
         return Mage::getSingleton('admin/session')->isAllowed('system/aoe_scheduler/aoe_scheduler_scheduler');
     }
